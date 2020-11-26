@@ -1,0 +1,62 @@
+
+<html>
+<head>
+
+<title>Untitled Document</title>
+<style>
+td 
+{
+height:5%;
+width:auto;
+}
+</style>
+</head>
+
+<body>
+<form name="loginForm">
+<fieldset style="height:30%; width:20%">
+			<legend>  
+			<h1> Login </h1>
+			</legend>
+			<table  height="50%" width="50%">
+					<tr>
+						<td> <label for="email"> E-Mail </label></td>
+						<td> <input type="email" name="email"></td>
+					</tr> 
+					<tr>
+						<td> <label for="Password"> Password </label></td>
+						<td> <input type="password" name="Password"> </td>
+					</tr>
+			    <tr>
+				<td> <input type="Submit" name="Submit"  onClick="check()">  </td> 
+               </tr>
+			</table>
+				
+</fieldset>
+</form>
+
+<script language="javascript">
+function check()
+{
+
+if(form.email.value == "ami@gmail.com" && form.Password.value == "123")
+{
+	//window.location = "https://docs.google.com/spreadsheets/d/1AI7DEvo1mcMqnn_IpFzu5DLskCMtf4_IzufXcVF2cZ0/edit?usp=sharing";
+	//return true;
+	//window.open('https://docs.google.com/spreadsheets/d/1AI7DEvo1mcMqnn_IpFzu5DLskCMtf4_IzufXcVF2cZ0/edit?usp=sharing')
+	location.href = 'https://www.google.com';
+}
+else if(form.email.value == "k@g.com" && form.Password.value == "456")
+{
+	
+	window.location = "https://www.formget.com/javascript-login-form/";
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+</body>
+</html>
